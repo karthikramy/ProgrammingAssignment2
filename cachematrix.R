@@ -1,6 +1,6 @@
 ## Program consists of two funtion makeCacheMartix and CacheSolve
-## makeCacheMatrix it to cache an inverse of an matrix
-##CacheSolve will compute the inverse of the matrix
+## makeCacheMatrix is to cache an inverse of an matrix
+##CacheSolve will compute the inverse of the matrix if its not already in cache
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -21,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+        ## Return a matrix that is the inverse of 'x' from cache or after 
+        ##computing the inverse of the matrix
         
         m <- x$getinv()
         if(!is.null(m)) {
