@@ -1,10 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Program consists of thwo funtion makeCacheMartix and CacheSolve
+## makeCacheMatrix it to cache an inverse of an matrix
+##CacheSolve will compute the inverse of the matrix
 
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
 
+        solve(x)
 }
 
 
